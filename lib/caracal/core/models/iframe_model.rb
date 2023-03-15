@@ -93,7 +93,7 @@ module Caracal
               file.write iframe_data
               file.rewind
             else
-              file = open(iframe_url)
+              file = URI.open(iframe_url)
             end
             file
           end
